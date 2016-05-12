@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#13b586"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/greybackground"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+
+                android:background="@drawable/icon1" />
+
+
+            <EditText
+                android:id="@+id/nombre_usuario"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="Nombre"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+
+
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/apellido_usuario"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Apellido"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/telefono_usuario"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Telefono"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comuna"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/provincia"
+
+                style="@style/AppTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#afaeae"
+                android:entries="@array/arrayProvincias"
+                android:textColor="#000000"></Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="Provincia"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <Spinner
+                android:id="@+id/comuna"
+
+                style="@style/AppTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#afaeae"
+                android:textColor="#000000"></Spinner>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/masculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+                        android:enabled="true"
+                        android:text="Masculino"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/femenino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:checked="false"
+                        android:enabled="true"
+                        android:text="Femenino"
+                        android:textColor="#000000" />
+
+                </TableRow>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/email_usuario"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Correo Electronico"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/password_usuario"
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/fecnac_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_column="0"
+                    android:layout_toLeftOf="@+id/imageButton1"
+                    android:layout_toStartOf="@+id/imageButton1"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="none"
+                    android:textColor="#000000">
+
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_column="3"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:contentDescription="Fecha de Nacimiento"
+                    android:cropToPadding="true"
+                    android:onClick="selectDate"
+                    android:src="@drawable/ic_datepicker" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:text="Seleccione 3 Preferencias "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/preferencia1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a19c9c"
+                android:entries="@array/arrayPreferencias" />
+
+            <Spinner
+                android:id="@+id/preferencia2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a19c9c"
+                android:entries="@array/arrayPreferencias" />
+
+            <Spinner
+                android:id="@+id/preferencia3"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="#a19c9c"
+                android:entries="@array/arrayPreferencias" />
+
+            <Button
+                android:id="@+id/insertar"
+                android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn"
+                android:text="Registrarse"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+</ScrollView>

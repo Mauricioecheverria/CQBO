@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayProvincias">
+        <item>Ninguno</item>
+        <item>Elqui</item>
+        <item>Limari</item>
+        <item>Choapa</item>
+    </string-array>
+    <string-array name="arrayElqui">
+        <item>La Serena</item>
+        <item>Coquimbo</item>
+        <item>Andacollo</item>
+        <item>La Higuera</item>
+        <item>Paiguano</item>
+        <item>Vicuña</item>
+    </string-array>
+    <string-array name="arrayLimari">
+        <item>Ovalle</item>
+        <item>Combarbalá</item>
+        <item>Monte Patria</item>
+        <item>Punitaqui</item>
+        <item>Río Hurtado</item>
+    </string-array>
+    <string-array name="arrayChoapa">
+        <item>Illapel</item>
+        <item>Canela</item>
+        <item>Los Vilos</item>
+        <item>Salamanca</item>
+    </string-array>
+    <string-array name="arrayDefecto">
+        <item>--</item>
+    </string-array>
+    <string-array name="arrayPreferencias">
+        <item>Deportes</item>
+        <item>Gastronomia</item>
+        <item>Turismo</item>
+        <item>Tecnologia</item>
+    </string-array>
+
+
+</resources>
